@@ -13,6 +13,28 @@ $COLOR = "white";
 $coLOR =  "blue";
 echo "My car is " . $color . "<br>";
 echo "My house is " . $COLOR . "<br>";
-echo "My boat is " . $coLOR . "<br>";
+echo "My boat is " . $coLOR . "<br><br>";
+
+/*The PHP echo statement is often used to output data to the screen.*/
+
+$txt = "W3Schools.com";
+echo "I love $txt! <br>";
+$txt1 = "W3Schools.com";
+echo "I love " . $txt1 . "! <br><br>" ;
+
+/*To get the data type of a variable, use the var_dump() function.*/
+
+var_dump(5);
+echo "<br>";
+var_dump("John");
+echo "<br>";
+var_dump(3.14);
+echo "<br>";
+var_dump(true);
+echo "<br>";
+var_dump([2, 3, 56]);
+echo "<br>";
+var_dump(NULL);
+echo "<br>";
 
 ?>
