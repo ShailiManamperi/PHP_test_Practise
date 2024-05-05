@@ -37,4 +37,17 @@ echo "<br>";
 var_dump(NULL);
 echo "<br>";
 
+/*A variable declared outside a function has a GLOBAL SCOPE and can only be accessed outside a function*/
+
+$x = 5; // global scope
+
+function myTest() {
+    // using x inside this function will generate an error
+    global $x;
+    echo "<p>Variable x inside function is: $x</p>";
+}
+myTest();
+
+echo "<p>Variable x outside function is: $x</p>";
+
 ?>
