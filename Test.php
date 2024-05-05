@@ -87,5 +87,13 @@ class Car {
 
 $myCar = new Car("red", "Volvo");
 var_dump($myCar);
+echo "<br><br>";
+
+/*To concatenate, or combine, two strings you can use the . operator:*/
+
+$one = "Hello";
+$two = "World";
+$three = $one . " " . $two;
+echo $three;
 
 ?>
