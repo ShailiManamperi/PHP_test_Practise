@@ -60,5 +60,15 @@ myTest1();
 // using x outside the function will generate an error
 //echo "<p>Variable x outside function is: $y</p>";
 
+/*To do this, use the static keyword when you first declare the variable*/
 
+function myTest3() {
+    static $x = 0;
+    echo $x;
+    $x++;
+}
+
+myTest3();
+myTest3();
+myTest3();
 ?>
