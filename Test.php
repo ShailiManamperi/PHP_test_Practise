@@ -43,11 +43,22 @@ $x = 5; // global scope
 
 function myTest() {
     // using x inside this function will generate an error
-    global $x;
-    echo "<p>Variable x inside function is: $x</p>";
+    //echo "<p>Variable x inside function is: $x</p>";
 }
 myTest();
 
 echo "<p>Variable x outside function is: $x</p>";
+
+/*A variable declared within a function has a LOCAL SCOPE and can only be accessed within that function*/
+
+function myTest1() {
+    $y = 5; // local scope
+    echo "<p>Variable x inside function is: $y</p>";
+}
+myTest1();
+
+// using x outside the function will generate an error
+//echo "<p>Variable x outside function is: $y</p>";
+
 
 ?>
